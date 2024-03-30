@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "android": "cross-env ENVFILE=env/.env.development bash ./scripts/android/run.sh",
-    "ios": "react-native run-ios",
+    "ios": "cross-env ENVFILE=env/.env.development bash ./scripts/ios/run.sh",
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint ."
