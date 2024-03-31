@@ -18,7 +18,32 @@ export default (theme: Theme) =>
     },
     weatherHighlightInnerSection: {
       flex: 1,
+      padding: 10,
       borderRadius: 10,
       backgroundColor: theme.colors.lightGrey,
+    },
+    row: {
+      flexDirection: 'row',
+      flexWrap: 'wrap',
+      justifyContent: 'space-between',
+    },
+    weatherHighlightText: {
+      marginRight: 10,
+      lineHeight: 25,
+      fontSize: 14,
+      fontWeight: 'bold',
+    },
+    dewPointTextSection: {
+      flexDirection: 'row',
+    },
+    dewPointText: {
+      lineHeight: 25,
+      fontSize: 14,
+      fontWeight: 'bold',
+    },
+    dewPointDegreeCircle: {
+      lineHeight: 25,
+      fontSize: 6,
+      fontWeight: 'bold',
     },
   });
