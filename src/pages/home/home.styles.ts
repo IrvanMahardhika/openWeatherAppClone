@@ -7,6 +7,5 @@ export default (theme: Theme) =>
     rootContainer: {
       ...theme.layout.rootContainer,
       alignItems: 'center',
-      justifyContent: 'center',
     },
   });
