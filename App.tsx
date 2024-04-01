@@ -7,6 +7,9 @@
  */
 
 import React from 'react';
+import {Provider} from 'react-redux';
+
+import {store} from '@src/redux/store';
 
 import ThemeProvider from '@src/styles/themeProvider';
 
@@ -17,10 +20,12 @@ const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
   return (
-    <ThemeProvider>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <Home />
-    </ThemeProvider>
+    <Provider store={store}>
+      <ThemeProvider>
+        <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
+        <Home />
+      </ThemeProvider>
+    </Provider>
   );
 };
 

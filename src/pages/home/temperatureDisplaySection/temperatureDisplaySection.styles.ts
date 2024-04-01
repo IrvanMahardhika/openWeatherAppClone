@@ -19,13 +19,10 @@ export default (theme: Theme) =>
       flexDirection: 'row',
       alignItems: 'center',
     },
-    weatherIconSection: {
-      marginRight: 5,
-    },
     weatherIcon: {
-      height: 20,
-      width: 20,
-      backgroundColor: 'rgb(3, 105, 241)',
+      height: 50,
+      width: 50,
+      resizeMode: 'cover',
     },
     weatherInfoSection: {
       flex: 1,

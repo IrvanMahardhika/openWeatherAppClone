@@ -1,0 +1,6 @@
+export const SPINNER_SHOW = 'SPINNER_SHOW';
+export const SPINNER_HIDE = 'SPINNER_HIDE';
+export const SPINNER_RESET = 'SPINNER_RESET';
+
+export const SET_FORECAST = 'SET_FORECAST';
+export const GET_FORECAST = 'GET_FORECAST';
