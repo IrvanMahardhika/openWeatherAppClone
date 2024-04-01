@@ -11,8 +11,9 @@ export default (theme: Theme) =>
       justifyContent: 'center',
     },
     temperatureDisplayInnerSection: {
-      width: 100,
+      width: 120,
       height: 100,
+      alignItems: 'center',
     },
     weatherSection: {
       height: 30,
