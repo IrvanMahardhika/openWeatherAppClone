@@ -64,3 +64,6 @@ buck-out/
 
 # react-native-config codegen
 ios/tmp.xcconfig
+
+# Testing
+coverage

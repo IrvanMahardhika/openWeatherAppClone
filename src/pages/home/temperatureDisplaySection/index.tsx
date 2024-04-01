@@ -35,10 +35,14 @@ const temperatureDisplaySection = () => {
             />
           </View>
           <View style={styles.weatherInfoSection}>
-            <Text style={styles.weatherInfoMainText}>
+            <Text
+              testID="weather-info-main-text"
+              style={styles.weatherInfoMainText}>
               {currForecast?.weather[0]?.main}
             </Text>
-            <Text style={styles.weatherInfoDescriptionText}>
+            <Text
+              testID="weather-info-desc-text"
+              style={styles.weatherInfoDescriptionText}>
               {currForecast?.weather[0]?.description}
             </Text>
           </View>

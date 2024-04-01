@@ -7,6 +7,7 @@
     "ios": "cross-env ENVFILE=env/.env.development bash ./scripts/ios/run.sh",
     "start": "react-native start",
     "test": "jest",
+    "test:coverage": "jest --coverage",
     "lint": "eslint ."
   },
   "dependencies": {
@@ -24,6 +25,8 @@
     "@babel/core": "^7.12.9",
     "@babel/runtime": "^7.12.5",
     "@react-native-community/eslint-config": "^3.0.0",
+    "@testing-library/jest-native": "^4.0.1",
+    "@testing-library/react-native": "^7.2.0",
     "@types/jest": "^26.0.24",
     "@types/react-native": "^0.64.12",
     "@types/react-native-vector-icons": "^6.4.8",
