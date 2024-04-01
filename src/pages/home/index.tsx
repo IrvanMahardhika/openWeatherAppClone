@@ -3,6 +3,7 @@ import {View, Text} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
 
 import {getForecast} from '@src/redux/actions/forecast';
+import {RootState} from '@src/redux/store';
 
 import useThemedStyles from '@src/hooks/useThemedStyles';
 
@@ -17,9 +18,13 @@ const Home = () => {
 
   const dispatch = useDispatch();
 
+  const selectedCityReducer: string = useSelector(
+    (state: RootState) => state.selectedCityReducer,
+  );
+
   useEffect(() => {
-    dispatch(getForecast({city: 'London'}));
-  }, []);
+    dispatch(getForecast({city: selectedCityReducer}));
+  }, [selectedCityReducer]);
 
   return (
     <View style={styles.rootContainer}>

@@ -4,3 +4,5 @@ export const SPINNER_RESET = 'SPINNER_RESET';
 
 export const SET_FORECAST = 'SET_FORECAST';
 export const GET_FORECAST = 'GET_FORECAST';
+
+export const SET_SELECTED_CITY = 'SET_SELECTED_CITY';
