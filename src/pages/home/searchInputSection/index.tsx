@@ -1,5 +1,7 @@
 import React from 'react';
 import {View, Text} from 'react-native';
+import IconFeather from 'react-native-vector-icons/Feather';
+import IconFontAwesome from 'react-native-vector-icons/FontAwesome';
 
 import useThemedStyles from '@src/hooks/useThemedStyles';
 
@@ -10,14 +12,14 @@ const SearchInputSection = () => {
 
   return (
     <View style={styles.searchInputSection}>
-      <View>
-        <View style={styles.searchIcon} />
+      <View style={styles.searchIcon}>
+        <IconFeather name="search" size={25} color="#000" />
       </View>
       <View style={styles.searchTextSection}>
         <Text style={styles.searchText}>London</Text>
       </View>
       <View>
-        <View style={styles.menuIcon} />
+        <IconFontAwesome name="sliders" size={25} color="#000" />
       </View>
     </View>
   );

@@ -14,9 +14,6 @@ export default (theme: Theme) =>
     },
     searchIcon: {
       marginRight: 5,
-      width: 30,
-      height: 30,
-      backgroundColor: 'rgb(3, 105, 241)',
     },
     searchTextSection: {
       flexGrow: 1,
@@ -24,10 +21,5 @@ export default (theme: Theme) =>
     searchText: {
       fontSize: 18,
       fontWeight: 'bold',
-    },
-    menuIcon: {
-      width: 30,
-      height: 30,
-      backgroundColor: 'rgb(3, 105, 241)',
     },
   });
